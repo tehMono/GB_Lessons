@@ -6,20 +6,20 @@ namespace Lesson1._3
     {
         static void Main(string[] args)
         {
-            
+
             Console.Write("Введите число, определяющий количество элементов формируемой последовательности:");
             int num = int.Parse(Console.ReadLine());
-           
-                Console.WriteLine("Фибоначи через Рекурсию!");                          
-                int RecurResult = RecurCalc(num);
-                Console.WriteLine($"{num} число Фибоначчи = {RecurResult}");    
-            
-           
-                Console.WriteLine("Фибоначи через Цикл!");                                
-                int Result = Calc(num);
-                Console.WriteLine($"{num} число Фибоначчи = {Result}");
 
-                Console.ReadKey();
+            Console.WriteLine("Фибоначи через Рекурсию!");
+            int RecurResult = RecurCalc(num);
+            Console.WriteLine($"{num} число Фибоначчи = {RecurResult}");
+
+
+            Console.WriteLine("Фибоначи через Цикл!");
+            int Result = Calc(num);
+            Console.WriteLine($"{num} число Фибоначчи = {Result}");
+
+            Console.ReadKey();
         }
 
         public static int RecurCalc(int x)                      //рукурсивно
@@ -50,6 +50,6 @@ namespace Lesson1._3
             }
 
             return f1;
-        }                       
+        }
     }
 }
